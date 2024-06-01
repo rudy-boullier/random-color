@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Color</title>
+    <style>
+      *,
+      ::before,
+      ::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      #color {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
+
+      .card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .card__color-info {
+        color: rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <main id="color">
+      <div class="card">
+        <h1 class="card__color-name">Color Name</h1>
+        <p class="card__color-info">Press the spacebar to change the color</p>
+      </div>
+    </main>
+    <script>
+      const colorMain = document.getElementById("color");
+      const colorName = document.querySelector(".card__color-name");
+      const letters = "0123456789ABCDEF";
+
+      function getRandomColor() {
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+
+      function changeColor() {
+        const newColor = getRandomColor();
+        colorMain.style.backgroundColor = newColor;
+        colorName.textContent = newColor;
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        changeColor();
+
+        document.addEventListener("keydown", (event) => {
+          if (event.code === "Space") {
+            event.preventDefault();
+            changeColor();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
