@@ -1,15 +1,9 @@
 # random-color
 
 <div align="center">
-  <a href="https://validator.nu/?doc=https%3A%2F%2Frudy-boullier.github.io%2Frandom-color%2F">
-    <img alt="W3C Validation" src="https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Fvalidator.nu%2F">
-  </a>
-  <a href="https://rudy-boullier.github.io/random-color/">
-    <img alt="GitHub deployments" src="https://img.shields.io/github/deployments/rudy-boullier/random-color/github-pages">
-  </a>
-  <a href="https://github.com/rudy-boullier/random-color?tab=MIT-1-ov-file">
-    <img alt="GitHub License" src="https://img.shields.io/github/license/rudy-boullier/random-color">
-  </a>
+  <a href="https://validator.nu/?doc=https%3A%2F%2Frudy-boullier.github.io%2Frandom-color%2F"><img alt="W3C Validation" src="https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Fvalidator.nu%2F"></a>
+  <a href="https://rudy-boullier.github.io/random-color/"><img alt="GitHub deployments" src="https://img.shields.io/github/deployments/rudy-boullier/random-color/github-pages"></a>
+  <a href="https://github.com/rudy-boullier/random-color?tab=MIT-1-ov-file"><img alt="GitHub License" src="https://img.shields.io/github/license/rudy-boullier/random-color"></a>
 </div>
 
 <div align="center">
